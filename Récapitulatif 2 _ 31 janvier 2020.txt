@@ -1,0 +1,32 @@
+# Tests unitaires
+
+Les tests unitaires permettent de tester des fonctionnalités du programme de façon plus ou moins granulaire en leur attribuant un contexte (On compare le retour des fonctionnalités aux valeurs attendues).
+_Assert.AreEqual(<résultat attendu>, <Retour de la fonction à tester>)_.
+Les tests unitaires sont normalement rédigés avant le code source, ainsi on envisage notre code afin de le rendre testable, en testant chaque fonctionnalité. Cette technique de codage s'appelle la TDD (test driven development).ce qui nous pousse à écrire du code testable.
+Pour écrire ce code, nous utilisons le *pakage NuGet NUnit*, il faut ajouter un using "NUnit.Framework" et définir ensuite une classe programme test. Ensuite, il faut mettre "[Test]" au-dessus de la fonction de test pour déclarer un test.
+Dans Dependancies du new project, il faut cliquer "Add reference" dans la fenêtre, cliquer dans projet et cocher la case du bon projet à tester.
+
+
+# SGBDR Système de gestion des bases de données relationnelles
+
+Sert à gérer les bases de données. Il existe 2 types de SGBDR: le SQL et le NoSQL. Le SQL est un langage qui permet de faire des requêtes vers une SGBDR. Les bases de données relationnelles sont MySQL, SQL Server, SQLite (non-exhaustif) et les NoSQL MongoDB, Redis, Cassandra.
+
+## Base de données (BDD)
+
+Elles servent à stocker, organiser et manipuler des données en mémoire morte le plus souvent. Elles peuvent s'apparenter à un fichier Excel.
+Ainsi on retrouve des tables qui sont les feuilles, des champs qui sont les colonnes et les enregistrements qui sont les lignes. 
+Chaque champ possède un type spécifique. On peut déterminer au moins une clef primaire dans une table, celle-ci vérifie que les données du champs contenant la clef primaire sont uniques entre elles. Elles peut enfin être auto-incrémenté.
+
+Mots-clefs :
+
+|	Commandes	   |									Action réalisée					   	   |
+|------------------|:-------------------------------------------------------------------------:|
+| SELECT		   | Selectionne des données                                                   |
+| CREATE DATABASE  | Créé la BDD                                                               |
+| CREATE TABLE     | Créé une table                                                            |
+| SHOW TABLE       | Affiche toutes les tables de la BDD en cours                              |
+| WHERE            | Trie les données                                                          |
+| AS               | permet de créer un alias = renommer les champs dans le tableau affiché	   |
+| INSERT INTO      | insérer des nouvelles données dans le tableau                             |
+| UPDATE           | mise à jour des données                                                   |
+
